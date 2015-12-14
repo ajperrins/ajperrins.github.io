@@ -5,18 +5,18 @@
   
   <title>Private members in ES5 | Some of my thoughts and interests</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="For my first post, to try out hexo, I’ll succinctly show how to defing a privatemember in a constructor function.
+  <meta name="description" content="For my first post, to try out hexo, I’ll succinctly show how to define a privatemember in a constructor function.
 In the sample code below, a consumer creates a new C and can only invoke getCallCount(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Private members in ES5">
 <meta property="og:url" content="http://www.ajperrins.com/blog/2015/06/30/private-members-in-es5/index.html">
 <meta property="og:site_name" content="Some of my thoughts and interests">
-<meta property="og:description" content="For my first post, to try out hexo, I’ll succinctly show how to defing a privatemember in a constructor function.
+<meta property="og:description" content="For my first post, to try out hexo, I’ll succinctly show how to define a privatemember in a constructor function.
 In the sample code below, a consumer creates a new C and can only invoke getCallCount(">
-<meta property="og:updated_time" content="2015-07-01T13:51:28.000Z">
+<meta property="og:updated_time" content="2015-07-06T20:41:03.673Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Private members in ES5">
-<meta name="twitter:description" content="For my first post, to try out hexo, I’ll succinctly show how to defing a privatemember in a constructor function.
+<meta name="twitter:description" content="For my first post, to try out hexo, I’ll succinctly show how to define a privatemember in a constructor function.
 In the sample code below, a consumer creates a new C and can only invoke getCallCount(">
   
   
@@ -88,7 +88,7 @@ In the sample code below, a consumer creates a new C and can only invoke getCall
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>For my first post, to try out hexo, I’ll succinctly show how to defing a private<br>member in a constructor function.</p>
+        <p>For my first post, to try out hexo, I’ll succinctly show how to define a private<br>member in a constructor function.</p>
 <p>In the sample code below, a consumer creates a new <code>C</code> and can only invoke <code>getCallCount()</code><br>on that object. But it can never change the value of the <em>private</em> <code>callCount</code></p>
 <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">C</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> callCount = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">this</span>.getCallCount = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> ++callCount;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>A consumer can get (and effectively increment) the value of <code>callCount</code> but never modify it.</p>
@@ -96,7 +96,7 @@ In the sample code below, a consumer creates a new C and can only invoke getCall
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.ajperrins.com/blog/2015/06/30/private-members-in-es5/" data-id="cibo2jvyr00074gcng4kb2jl9" class="article-share-link">Share</a>
+      <a data-url="http://www.ajperrins.com/blog/2015/06/30/private-members-in-es5/" data-id="cii5c1ds0000dukcngslzi1db" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/private/">private</a></li></ul>
@@ -105,6 +105,20 @@ In the sample code below, a consumer creates a new C and can only invoke getCall
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/blog/2015/12/13/what-if-vs-why/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Beware of &quot;What if...?&quot; be aware of &quot;Why...?&quot;
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 

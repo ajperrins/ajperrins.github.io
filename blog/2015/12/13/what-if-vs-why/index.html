@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Some of my thoughts and interests</title>
+  <title>Beware of &quot;What if...?&quot; be aware of &quot;Why...?&quot; | Some of my thoughts and interests</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Some of my thoughts and interests">
-<meta property="og:url" content="http://www.ajperrins.com/blog/index.html">
+  <meta name="description" content="On the inclination of developers to design the problem to fit their solutionWhen in a discussion between developers on the best technical solution for a problem, they often ask eachother “Yeah, but Wh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beware of "What if...?" be aware of "Why...?"">
+<meta property="og:url" content="http://www.ajperrins.com/blog/2015/12/13/what-if-vs-why/index.html">
 <meta property="og:site_name" content="Some of my thoughts and interests">
-<meta property="og:description">
+<meta property="og:description" content="On the inclination of developers to design the problem to fit their solutionWhen in a discussion between developers on the best technical solution for a problem, they often ask eachother “Yeah, but Wh">
+<meta property="og:image" content="http://www.businessblogshub.com/wp-content/uploads/2012/08/rope.jpg">
+<meta property="og:updated_time" content="2015-12-14T02:16:23.279Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Some of my thoughts and interests">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Beware of "What if...?" be aware of "Why...?"">
+<meta name="twitter:description" content="On the inclination of developers to design the problem to fit their solutionWhen in a discussion between developers on the best technical solution for a problem, they often ask eachother “Yeah, but Wh">
   
   
   <link href='//fonts.useso.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
@@ -53,8 +55,7 @@
 
     <div class="outer">
       
-      <section id="main">
-      <article id="post-what-if-vs-why" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-what-if-vs-why" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -62,8 +63,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2015/12/13/what-if-vs-why/">Beware of &quot;What if...?&quot; be aware of &quot;Why...?&quot;</a>
+    <h1 class="article-title" itemprop="name">
+      Beware of &quot;What if...?&quot; be aware of &quot;Why...?&quot;
     </h1>
   
 
@@ -105,61 +106,21 @@
     </footer>
   </div>
   
-</article>
-
-
     
-      <article id="post-private-members-in-es5" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2015/06/30/private-members-in-es5/">Private members in ES5</a>
-    </h1>
   
+    <a href="/blog/2015/06/30/private-members-in-es5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Private members in ES5</div>
+    </a>
+  
+</nav>
 
-        <div class="article-meta">
-          <div class="article-date">
-  <i class="fa fa-calendar"></i>
-  <a href="/blog/2015/06/30/private-members-in-es5/">
-    <time datetime="2015-06-30T04:00:00.000Z" itemprop="datePublished">2015-06-30</time>
-  </a>
-</div>
-          
-  <div class="article-category">
-  	<i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/blog/categories/software/">software</a>
-  </div>
-
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>For my first post, to try out hexo, I’ll succinctly show how to define a private<br>member in a constructor function.</p>
-<p>In the sample code below, a consumer creates a new <code>C</code> and can only invoke <code>getCallCount()</code><br>on that object. But it can never change the value of the <em>private</em> <code>callCount</code></p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">C</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> callCount = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">this</span>.getCallCount = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> ++callCount;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>A consumer can get (and effectively increment) the value of <code>callCount</code> but never modify it.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.ajperrins.com/blog/2015/06/30/private-members-in-es5/" data-id="cii5c1ds0000dukcngslzi1db" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/private/">private</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
-
-    </section>
+</section>
       
     </div>
     <footer id="footer">
